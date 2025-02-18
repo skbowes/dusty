@@ -1,0 +1,73 @@
+ ===========================
+  Output from program Dusty 
+  Version: 2.0
+ ===========================
+  
+  INPUT parameters from file:
+  400K.inp                                                              
+  
+* ----------------------------------------------------------------------
+* NOTES:
+* This is a complicated version of an input file, though without any user
+* supplied files.
+* ----------------------------------------------------------------------
+  Central source spectrum described by a black body                       
+  with temperature: 8000 K
+  --------------------------------------------
+  Abundances for supported grains:
+  Sil-Ow Sil-Oc Sil-DL grf-DL amC-Hn SiC-Pg
+  0.000  0.000  0.000  0.000  0.000  0.000
+  Optical properties from file:
+  wd01.dat                                                              
+  --------------------------------------------
+  Dust temperature on the inner boundary: 400  K
+  --------------------------------------------
+  Density described by 1/r**k with k =  2.0
+  Relative thickness: 1.000E+03
+  --------------------------------------------
+  Optical depths at 1.0E+01 microns
+  ranging from 1.00E+00 to 1.00E+01
+   10 models with linear grid                
+  Required accuracy: 5%
+  --------------------------------------------
+  Images requested for these wavelengths (mic)
+  0.55  4.0  50  1000
+  --------------------------------------------
+  
+  ====================================================  
+  For compliance with the point-source assumption, the
+  following results should only be applied to sources 
+  whose effective temperature exceeds 800  K.
+  ====================================================
+          
+  RESULTS:
+  --------
+ ###   tau0   F1(W/m2)  r1(cm)    r1/rc   theta1  Td(Y) err
+ ###     1        2        3        4        5      6    7 
+ ==========================================================
+   1 1.00E+00 7.48E+01 6.39E+15 1.76E+03 4.77E+01   24   0 
+   2 2.00E+00 3.89E+01 8.86E+15 2.44E+03 6.61E+01   21   0 
+   3 3.00E+00 2.58E+01 1.09E+16 3.00E+03 8.12E+01   20   0 
+   4 4.00E+00 1.92E+01 1.26E+16 3.48E+03 9.42E+01   19   1 
+   5 5.00E+00 1.52E+01 1.42E+16 3.91E+03 1.06E+02   19   1 
+   6 6.00E+00 1.25E+01 1.57E+16 4.32E+03 1.17E+02   18   1 
+   7 7.00E+00 1.05E+01 1.70E+16 4.70E+03 1.27E+02   18   2 
+   8 8.00E+00 9.05E+00 1.84E+16 5.07E+03 1.37E+02   17   2 
+   9 9.00E+00 8.01E+00 1.95E+16 5.39E+03 1.46E+02   17   2 
+  10 1.00E+01 7.25E+00 2.05E+16 5.66E+03 1.53E+02   17   2 
+ ==========================================================
+   (1) Optical depth at 1.0E+01 microns
+   (2) Bolometric flux at the inner radius 
+   (3) Inner radius for L=1E4 Lsun
+   (4) Ratio of the inner to the stellar radius
+   (5) Angular size (in arcsec) when Fbol=1E-6 W/m2
+   (6) Dust temperature at the outer edge (in K)
+   (7) Maximum error in flux conservation (%)
+ =================================================
+  Everything is OK for all models
+  Table with spectral properties is in file *.spp
+  All spectra are in file *.stb
+  All imaging quantities are in file *.itb
+  All radial profiles are in file *.rtb
+  All run-time messages are in file *.mtb
+ ========== THE END ==============================
